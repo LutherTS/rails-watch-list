@@ -1,0 +1,7 @@
+<%= simple_form_for [@list, @bookmark] do |f| %>
+  <div class="col-6">
+    <%= f.association :movie, prompt: 'Choose a movie' %>
+    <%= f.input :comment, placeholder: 'Tell us your feedback...' %>
+    <%= f.submit %>
+  </div>
+<% end %>
